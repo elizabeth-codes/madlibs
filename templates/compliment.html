@@ -3,7 +3,21 @@
 <head>
   <title>A Compliment</title>
 </head>
-<body>
-    Hi {{ person }}! I think you're {{ compliment }}!
+    <p>Hi {{ person }}! I think you're {{ compliment }}!</p>
+
+    <div>
+      <form action="/game">
+        <fieldset>
+          <legend>Do you want to play a game?</legend>
+          <input type="radio" id="yes" name="playgame" value="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="playgame" value="no">
+          <label for="no">No</label>
+        </fieldset>
+        <input type="submit">
+      </form>
+    </div>
+
+
 </body>
 </html>
